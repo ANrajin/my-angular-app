@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h1 class="text-primary">All Servers</h1>
+
+    <div class="form-group">
+        <label class="label-for">Server Name</label>
+        <input class="form-control fom-control-sm" [(ngModel)]="servername" />
+    </div>
+
+    <button type="button" class="btn btn-outline-primary btn-sm" [disabled]="!allowAddServer"
+        (click)="onCreateServer()">
+        Create Server
+    </button>
+
+    <div class="py-3">{{serverCreationStatus}}</div>
+
+    <app-server></app-server>
+</div>
