@@ -1,0 +1,8 @@
+<div class="card mb-3">
+    <div class="card-header fw-bold">
+        {{element.name}}
+    </div>
+    <div class="card-body" [ngClass]="element.type === 'server' ? 'text-primary' : 'text-danger'">
+        <p class="card-text">{{element.content}}</p>
+    </div>
+</div>
